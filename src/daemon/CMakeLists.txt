@@ -1,4 +1,4 @@
-# Copyright (c) 2014-2019, AEON, The Monero Project
+# Copyright (c) 2014-2019, XR∞Coin, The Monero Project
 #
 # All rights reserved.
 #
@@ -94,5 +94,5 @@ target_link_libraries(daemon
     ${Blocks})
 set_property(TARGET daemon
   PROPERTY
-    OUTPUT_NAME "aeond")
+    OUTPUT_NAME "XR∞Coind")
 install(TARGETS daemon DESTINATION bin)

@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2019, AEON, The Monero Project
+// Copyright (c) 2014-2019, XR∞Coin, The Monero Project
 //
 // All rights reserved.
 //
@@ -256,7 +256,7 @@ namespace cryptonote
 
   bool checkpoints::load_checkpoints_from_dns(network_type nettype)
   {
-    return true; // TODO: setup DNS checkpoints for Aeon
+    return true; // TODO: setup DNS checkpoints for XR∞Coin
     std::vector<std::string> records;
 
     // All four MoneroPulse domains have DNSSEC on and valid

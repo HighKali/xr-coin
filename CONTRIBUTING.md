@@ -1,6 +1,6 @@
-# Contributing to Aeon
+# Contributing to XR∞Coin
 
-Being a fork of Monero, Aeon shares most of its codebase with Monero while making a few critical modifications such
+Being a fork of Monero, XR∞Coin shares most of its codebase with Monero while making a few critical modifications such
 that it can offer a unique alternative to Monero. The codebase is intentionally kept close to Monero's in order to
 benefit from the higher code reliability due to the larger source of peer reviewing available in Monero.
 
@@ -58,11 +58,11 @@ is reduced, although this is not a strict requirement.
 
 The above effort is faciliated by avoiding the creation of unnecessary differences in the repository. This implies that
 **any proposed changes which also apply to Monero should be submitted to Monero.** Specifically, please send a pull
-request to Monero first, then send a corresponding PR to Aeon by cherry-picking, as described above. If your Monero PR
-is merged, your corresponding Aeon PR will then be merged subsequently.
+request to Monero first, then send a corresponding PR to XR∞Coin by cherry-picking, as described above. If your Monero PR
+is merged, your corresponding XR∞Coin PR will then be merged subsequently.
 
-If you are to propose some changes that are specific to Aeon and distinct from Monero, submit a pull request directly
-to Aeon and justify your changes by laying out how they are *more* or *uniquely* applicable to Aeon. With a good
+If you are to propose some changes that are specific to XR∞Coin and distinct from Monero, submit a pull request directly
+to XR∞Coin and justify your changes by laying out how they are *more* or *uniquely* applicable to XR∞Coin. With a good
 justification the burden of increased maintenance cost as described above can be overcome.
 
 

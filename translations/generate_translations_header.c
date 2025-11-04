@@ -1,5 +1,5 @@
 // Copyright (c) 2013, Sergey Lyubka
-// Copyright (c) 2017-2019, AEON, The Monero Project
+// Copyright (c) 2017-2019, XR∞Coin, The Monero Project
 // All rights reserved.
 // Released under the MIT license.
 

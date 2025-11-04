@@ -1,6 +1,6 @@
 # Monero
 
-Copyright (c) 2014-2019, AEON, The Monero Project
+Copyright (c) 2014-2019, XR∞Coin, The Monero Project
 
 ## Crypto Ops Builder
 

@@ -1,4 +1,4 @@
-# Copyright (c) 2014-2019, AEON, The Monero Project
+# Copyright (c) 2014-2019, XR∞Coin, The Monero Project
 #
 # All rights reserved.
 #
@@ -127,7 +127,7 @@ endif()
 
 set_property(TARGET blockchain_import
 	PROPERTY
-	OUTPUT_NAME "aeon-blockchain-import")
+	OUTPUT_NAME "XR∞Coin-blockchain-import")
 install(TARGETS blockchain_import DESTINATION bin)
 
 monero_add_executable(blockchain_export
@@ -148,7 +148,7 @@ target_link_libraries(blockchain_export
 
 set_property(TARGET blockchain_export
 	PROPERTY
-	OUTPUT_NAME "aeon-blockchain-export")
+	OUTPUT_NAME "XR∞Coin-blockchain-export")
 install(TARGETS blockchain_export DESTINATION bin)
 
 monero_add_executable(blockchain_blackball
@@ -170,7 +170,7 @@ target_link_libraries(blockchain_blackball
 
 set_property(TARGET blockchain_blackball
 	PROPERTY
-	OUTPUT_NAME "aeon-blockchain-mark-spent-outputs")
+	OUTPUT_NAME "XR∞Coin-blockchain-mark-spent-outputs")
 install(TARGETS blockchain_blackball DESTINATION bin)
 
 
@@ -192,7 +192,7 @@ target_link_libraries(blockchain_usage
 
 set_property(TARGET blockchain_usage
 	PROPERTY
-	OUTPUT_NAME "aeon-blockchain-usage")
+	OUTPUT_NAME "XR∞Coin-blockchain-usage")
 install(TARGETS blockchain_usage DESTINATION bin)
 
 monero_add_executable(blockchain_ancestry
@@ -213,7 +213,7 @@ target_link_libraries(blockchain_ancestry
 
 set_property(TARGET blockchain_ancestry
 	PROPERTY
-	OUTPUT_NAME "aeon-blockchain-ancestry")
+	OUTPUT_NAME "XR∞Coin-blockchain-ancestry")
 install(TARGETS blockchain_ancestry DESTINATION bin)
 
 monero_add_executable(blockchain_depth
@@ -234,6 +234,6 @@ target_link_libraries(blockchain_depth
 
 set_property(TARGET blockchain_depth
 	PROPERTY
-	OUTPUT_NAME "aeon-blockchain-depth")
+	OUTPUT_NAME "XR∞Coin-blockchain-depth")
 install(TARGETS blockchain_depth DESTINATION bin)
 

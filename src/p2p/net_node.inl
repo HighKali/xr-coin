@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2021, AEON, The Monero Project
+// Copyright (c) 2014-2021, XR∞Coin, The Monero Project
 //
 // All rights reserved.
 //

@@ -1,0 +1,55 @@
+#!/data/data/com.termux/files/usr/bin/bash
+echo "⚡ Integro modulo Hashrate Orbitale e Contributing nella homepage…"
+
+cat > ~/xrcoin/index.html <<'EOF'
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>XR∞ Nodo Orbitale</title>
+  <style>
+    body { background:#0b0c10; color:#c5c6c7; font-family:monospace; padding:2em; }
+    button, select { background:#45a29e; color:#0b0c10; padding:0.5em 1em; border:none; cursor:pointer; margin:0.5em 0; }
+    iframe { width:100%; height:400px; border:none; display:none; }
+    .section { margin-bottom:2em; }
+    code { background:#1f2833; padding:0.2em 0.4em; border-radius:4px; }
+  </style>
+</head>
+<body>
+  <h1>⛏️ XR∞ Nodo Orbitale</h1>
+  <p>Ogni hash è un battito, ogni nodo una stella. Minera Monero, contribuisci alla scienza, potenzia il tuo nodo.</p>
+
+  <div class="section">
+    <h2>⚡ Acquista Hashrate Orbitale</h2>
+    <p>Potenzia il tuo nodo XR∞ acquistando potenza computazionale da marketplace esterni.</p>
+    <button onclick="window.open('https://www.nicehash.com/marketplace?ref=XR∞')">🛒 NiceHash</button>
+    <button onclick="window.open('https://www.miningrigrentals.com/?ref=XR∞')">🛒 MiningRigRentals</button>
+    <p><strong>Istruzioni:</strong></p>
+    <ul>
+      <li>Algoritmo: <code>RandomX</code></li>
+      <li>Pool: <code>pool.supportxmr.com:3333</code></li>
+      <li>Wallet: <code>491Hnbre8XP1Lyji5P53JyK5QVSrhj4ZPfABotRjPjRL4yeVVa8p7pMRRe9zzMDYh8PZhcmeoMBREUkLwM6H96CKBdL47XX</code></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🤝 Contributing</h2>
+    <p>Vuoi contribuire al progetto XR∞Coin?</p>
+    <ul>
+      <li>Forka il repository su GitHub</li>
+      <li>Apri una pull request con miglioramenti</li>
+      <li>Contattaci per integrazioni scientifiche, minerarie o narrative</li>
+    </ul>
+    <p>📩 Email orbitale: <code>xrcoin@rackchain.org</code></p>
+  </div>
+</body>
+</html>
+EOF
+
+echo "📦 Committo e pubblico su GitHub…"
+cd ~/xrcoin || exit
+git add index.html
+git commit -m "⚡ Modulo Hashrate Orbitale + Contributing integrati nella homepage XR∞Coin"
+git push origin main
+
+echo "🌐 Homepage aggiornata: https://highkali.github.io/xrcoin/"

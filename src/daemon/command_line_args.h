@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2019, AEON, The Monero Project
+// Copyright (c) 2014-2019, XR∞Coin, The Monero Project
 // 
 // All rights reserved.
 // 
@@ -35,7 +35,7 @@
 
 namespace daemon_args
 {
-  std::string const WINDOWS_SERVICE_NAME = "Aeon Daemon";
+  std::string const WINDOWS_SERVICE_NAME = "XR∞Coin Daemon";
 
   const command_line::arg_descriptor<std::string, false, true, 2> arg_config_file = {
     "config-file"

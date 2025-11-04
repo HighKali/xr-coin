@@ -2,7 +2,7 @@
 /// @author rfree (current maintainer/user in monero.cc project - most of code is from CryptoNote)
 /// @brief This is the original cryptonote protocol network-events handler, modified by us
 
-// Copyright (c) 2014-2019, AEON, The Monero Project
+// Copyright (c) 2014-2019, XR∞Coin, The Monero Project
 //
 // All rights reserved.
 //
@@ -1604,7 +1604,7 @@ skip:
     if(m_synchronized.compare_exchange_strong(val_expected, true))
     {
       MGINFO_YELLOW(ENDL << "**********************************************************************" << ENDL
-        << "You are now synchronized with the network. You may now start aeon-wallet-cli." << ENDL
+        << "You are now synchronized with the network. You may now start XR∞Coin-wallet-cli." << ENDL
         << ENDL
         << "Use the \"help\" command to see the list of available commands." << ENDL
         << "**********************************************************************");

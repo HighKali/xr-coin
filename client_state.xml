@@ -1,0 +1,66 @@
+<client_state>
+<host_info>
+    <timezone>3600</timezone>
+    <domain_name>HONOR ALI-NX1 7f47693e</domain_name>
+    <ip_addr></ip_addr>
+    <host_cpid>134d766a608705ac9960d8127090b375</host_cpid>
+    <p_ncpus>8</p_ncpus>
+    <p_vendor>ARM</p_vendor>
+    <p_model> [Impl 0x41 Arch 8 Variant 0x2 Part 0xd05 Rev 0]</p_model>
+    <p_features>fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp</p_features>
+    <p_fpops>1000000000.000000</p_fpops>
+    <p_iops>1000000000.000000</p_iops>
+    <p_membw>1000000000.000000</p_membw>
+    <p_calculated>1762204741.904308</p_calculated>
+    <p_vm_extensions_disabled>0</p_vm_extensions_disabled>
+    <m_nbytes>7823962112.000000</m_nbytes>
+    <m_cache>-1.000000</m_cache>
+    <m_swap>7823958016.000000</m_swap>
+    <d_total>239700279296.000000</d_total>
+    <d_free>168166449152.000000</d_free>
+    <os_name>Android</os_name>
+    <os_version>5.10.226-android12-9-00051-ga13323220e07-ab12931418 (Android 15)</os_version>
+    <n_usable_coprocs>0</n_usable_coprocs>
+    <coprocs>
+    </coprocs>
+</host_info>
+<time_stats>
+    <on_frac>1.000000</on_frac>
+    <connected_frac>-1.000000</connected_frac>
+    <cpu_and_network_available_frac>0.999964</cpu_and_network_available_frac>
+    <active_frac>0.999964</active_frac>
+    <gpu_active_frac>0.999964</gpu_active_frac>
+    <client_start_time>1762204705.572253</client_start_time>
+    <total_start_time>1762204706.628984</total_start_time>
+    <total_duration>126.917619</total_duration>
+    <total_active_duration>95.651089</total_active_duration>
+    <total_gpu_active_duration>95.651089</total_gpu_active_duration>
+    <previous_uptime>128.270907</previous_uptime>
+    <last_update>1762204833.546603</last_update>
+</time_stats>
+<net_stats>
+    <bwup>0.000000</bwup>
+    <avg_up>0.000000</avg_up>
+    <avg_time_up>0.000000</avg_time_up>
+    <bwdown>1330320.459367</bwdown>
+    <avg_down>114025315869.789627</avg_down>
+    <avg_time_down>1762204815.306728</avg_time_down>
+</net_stats>
+<active_task_set>
+</active_task_set>
+<platform_name>aarch64-android-linux-gnu</platform_name>
+<core_client_major_version>8</core_client_major_version>
+<core_client_minor_version>2</core_client_minor_version>
+<core_client_release>6</core_client_release>
+<user_run_request>2</user_run_request>
+<user_run_prev_request>2</user_run_prev_request>
+<user_gpu_request>2</user_gpu_request>
+<user_gpu_prev_request>2</user_gpu_prev_request>
+<user_network_request>2</user_network_request>
+<new_version_check_time>0.000000</new_version_check_time>
+<all_projects_list_check_time>1762204709.652770</all_projects_list_check_time>
+<client_version_check_url>https://boinc.berkeley.edu/download.php?xml=1</client_version_check_url>
+<alt_platform>arm-android-linux-gnu</alt_platform>
+<user_cpids>
+</user_cpids>
+</client_state>

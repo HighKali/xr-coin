@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2019, AEON, The Monero Project
+// Copyright (c) 2014-2019, XR∞Coin, The Monero Project
 // 
 // All rights reserved.
 // 
@@ -181,7 +181,7 @@ namespace daemonizer
     }
     else // interactive
     {
-      //LOG_PRINT_L0("Aeon '" << MONERO_RELEASE_NAME << "' (v" << MONERO_VERSION_FULL);
+      //LOG_PRINT_L0("XR∞Coin '" << MONERO_RELEASE_NAME << "' (v" << MONERO_VERSION_FULL);
       if (command_line::has_arg(vm, arg_non_interactive))
         return executor.run_non_interactive(vm);
       else

@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2019, AEON, The Monero Project
+// Copyright (c) 2014-2019, XR∞Coin, The Monero Project
 // 
 // All rights reserved.
 // 
@@ -40,7 +40,7 @@
 
 namespace daemonize
 {
-  std::string const t_executor::NAME = "Aeon Daemon";
+  std::string const t_executor::NAME = "XR∞Coin Daemon";
 
   void t_executor::init_options(
       boost::program_options::options_description & configurable_options
@@ -58,7 +58,7 @@ namespace daemonize
       boost::program_options::variables_map const & vm
     )
   {
-    LOG_PRINT_L0("Aeon '" << MONERO_RELEASE_NAME << "' (v" << MONERO_VERSION_FULL << ") Daemonised");
+    LOG_PRINT_L0("XR∞Coin '" << MONERO_RELEASE_NAME << "' (v" << MONERO_VERSION_FULL << ") Daemonised");
     return t_daemon{vm};
   }
 

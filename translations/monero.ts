@@ -2082,7 +2082,7 @@ Pending or Failed:               &quot;failed&quot;|&quot;pending&quot;, &quot;o
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2650"/>
-        <source>aeon, milliaeon, microaeon, nanoaeon, picoaeon</source>
+        <source>XR∞Coin, milliXR∞Coin, microXR∞Coin, nanoXR∞Coin, picoXR∞Coin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3924,7 +3924,7 @@ Outputs per *: </source>
    Set the fee to default/unimportant/normal/elevated/priority.
  confirm-missing-payment-id &lt;1|0&gt;
  ask-password &lt;0|1|2   (or never|action|decrypt)&gt;
- unit &lt;aeon|milliaeon|microaeon|nanoaeon|picoaeon&gt;
+ unit &lt;XR∞Coin|milliXR∞Coin|microXR∞Coin|nanoXR∞Coin|picoXR∞Coin&gt;
    Set the default monero (sub-)unit.
  min-outputs-count [n]
    Try to keep at least that many outputs of value at least min-outputs-value.

@@ -1,4 +1,4 @@
-# Copyright (c) 2017-2019, AEON, The Monero Project
+# Copyright (c) 2017-2019, XR∞Coin, The Monero Project
 #
 # All rights reserved.
 #
@@ -50,5 +50,5 @@ add_dependencies(gen_multisig
   version)
 set_property(TARGET gen_multisig
   PROPERTY
-    OUTPUT_NAME "aeon-gen-trusted-multisig")
+    OUTPUT_NAME "XR∞Coin-gen-trusted-multisig")
 install(TARGETS gen_multisig DESTINATION bin)

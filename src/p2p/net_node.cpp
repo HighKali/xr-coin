@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2019, AEON, The Monero Project
+// Copyright (c) 2014-2019, XR∞Coin, The Monero Project
 //
 // All rights reserved.
 //
@@ -68,5 +68,5 @@ namespace nodetool
 
     const command_line::arg_descriptor<int64_t> arg_ibd_test = {"ibd-test", "Run in the Initial Blockchain Download test mode, where the daemon stops when reaching the given height (give -1 for synchronizing up to the current top)", 0};
 
-    const command_line::arg_descriptor<bool> arg_save_graph = {"save-graph", "Save data for dr aeon", false};
+    const command_line::arg_descriptor<bool> arg_save_graph = {"save-graph", "Save data for dr XR∞Coin", false};
 }

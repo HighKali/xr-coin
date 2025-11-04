@@ -1,33 +1,33 @@
 [Unit]
-Description=Aeon Full Node
+Description=XR∞Coin Full Node
 After=network.target
 
 [Service]
-User=aeon
-Group=aeon
+User=XR∞Coin
+Group=XR∞Coin
 WorkingDirectory=~
-RuntimeDirectory=aeon
+RuntimeDirectory=XR∞Coin
 
 # Clearnet config
 #
 Type=forking
-PIDFile=/run/aeon/aeond.pid
-ExecStart=/usr/bin/aeond --config-file /etc/aeond.conf \
-    --detach --pidfile /run/aeon/aeond.pid
+PIDFile=/run/XR∞Coin/XR∞Coind.pid
+ExecStart=/usr/bin/XR∞Coind --config-file /etc/XR∞Coind.conf \
+    --detach --pidfile /run/XR∞Coin/XR∞Coind.pid
 
 # Tor config
 #
 ## We have to use simple, not forking, because we cannot pass --detach
 ## because stderr/stdout is not available when detached, but torsocks
 ## attempts to write to it, and fails with 'invalid argument', causing
-## aeond to fail.
+## XR∞Coind to fail.
 #Type=simple
 #Environment=DNS_PUBLIC=tcp
 ## The following is needed only when accessing wallet from a different
 ## host in the LAN, VPN, etc, the RPC must bind to 0.0.0.0, but
 ## by default torsocks only allows binding to localhost.
 #Environment=TORSOCKS_ALLOW_INBOUND=1
-#ExecStart=/usr/bin/torsocks /usr/bin/aeond --config-file /etc/aeond.conf \
+#ExecStart=/usr/bin/torsocks /usr/bin/XR∞Coind --config-file /etc/XR∞Coind.conf \
 #    --non-interactive
 
 Restart=always

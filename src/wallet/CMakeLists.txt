@@ -1,4 +1,4 @@
-# Copyright (c) 2014-2019, AEON, The Monero Project
+# Copyright (c) 2014-2019, XR∞Coin, The Monero Project
 #
 # All rights reserved.
 #
@@ -100,7 +100,7 @@ target_link_libraries(wallet_rpc_server
     ${EXTRA_LIBRARIES})
 set_property(TARGET wallet_rpc_server
   PROPERTY
-    OUTPUT_NAME "aeon-wallet-rpc")
+    OUTPUT_NAME "XR∞Coin-wallet-rpc")
 install(TARGETS wallet_rpc_server DESTINATION bin)
 
 

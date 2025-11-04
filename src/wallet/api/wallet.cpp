@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2019, AEON, The Monero Project
+// Copyright (c) 2014-2019, XR∞Coin, The Monero Project
 //
 // All rights reserved.
 //
@@ -71,9 +71,9 @@ namespace {
     std::string get_default_ringdb_path(cryptonote::network_type nettype)
     {
       boost::filesystem::path dir = tools::get_default_data_dir();
-      // remove .aeon, replace with .aeon-shared-ringdb
+      // remove .XR∞Coin, replace with .XR∞Coin-shared-ringdb
       dir = dir.remove_filename();
-      dir /= ".aeon-shared-ringdb";
+      dir /= ".XR∞Coin-shared-ringdb";
       if (nettype == cryptonote::TESTNET)
         dir /= "testnet";
       else if (nettype == cryptonote::STAGENET)

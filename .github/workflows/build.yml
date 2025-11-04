@@ -18,7 +18,7 @@ jobs:
       run: USE_SINGLE_BUILDDIR=1 make release-static -j3
     - name: archive
       run: |
-        export ARTIFACT_NAME="aeon-mac-x64-$(git describe --tags)"
+        export ARTIFACT_NAME="XR∞Coin-mac-x64-$(git describe --tags)"
         mkdir $ARTIFACT_NAME
         cp bin/* $ARTIFACT_NAME
         tar cvzf $ARTIFACT_NAME.tar.bz2 $ARTIFACT_NAME
@@ -64,7 +64,7 @@ jobs:
       working-directory: build/release/bin
     - name: archive
       run: |
-        export ARTIFACT_NAME="aeon-win-x64-$(git describe --tags)"
+        export ARTIFACT_NAME="XR∞Coin-win-x64-$(git describe --tags)"
         mkdir $ARTIFACT_NAME
         cp bin/* $ARTIFACT_NAME
         zip -r9 $ARTIFACT_NAME.zip $ARTIFACT_NAME
@@ -117,7 +117,7 @@ jobs:
       run: USE_SINGLE_BUILDDIR=1 make release-static -j3
     - name: archive
       run: |
-        export ARTIFACT_NAME="aeon-linux-x64-$(git describe --tags)"
+        export ARTIFACT_NAME="XR∞Coin-linux-x64-$(git describe --tags)"
         mkdir $ARTIFACT_NAME
         cp bin/* $ARTIFACT_NAME
         tar cvzf $ARTIFACT_NAME.tar.bz2 $ARTIFACT_NAME
@@ -193,7 +193,7 @@ jobs:
         fetch-depth: 0
     - name: determine artifact name
       run: |
-        export ARTIFACT_NAME="aeon-mac-x64-$(git describe --tags)"
+        export ARTIFACT_NAME="XR∞Coin-mac-x64-$(git describe --tags)"
         echo "ARTIFACT_NAME=$ARTIFACT_NAME" >> $GITHUB_ENV
     - uses: actions/download-artifact@v3
       with:
@@ -203,7 +203,7 @@ jobs:
         tar xvf $ARTIFACT_NAME.tar.bz2
         sudo cp $ARTIFACT_NAME/* /usr/local/bin
     - name: run IBD test
-      run: aeond --non-interactive --ibd-test -1
+      run: XR∞Coind --non-interactive --ibd-test -1
 
   ibdtest-windows:
     needs: build-windows
@@ -221,7 +221,7 @@ jobs:
         install: mingw-w64-x86_64-toolchain git unzip curl
     - name: determine artifact name
       run: |
-        export ARTIFACT_NAME="aeon-win-x64-$(git describe --tags)"
+        export ARTIFACT_NAME="XR∞Coin-win-x64-$(git describe --tags)"
         echo "ARTIFACT_NAME=$ARTIFACT_NAME" >> $GITHUB_ENV
     - uses: actions/download-artifact@v3
       with:
@@ -231,7 +231,7 @@ jobs:
         unzip $ARTIFACT_NAME.zip
         cp $ARTIFACT_NAME/* /usr/bin
     - name: run IBD test
-      run: aeond --non-interactive --ibd-test -1
+      run: XR∞Coind --non-interactive --ibd-test -1
 
   ibdtest-ubuntu:
     needs: build-ubuntu
@@ -242,7 +242,7 @@ jobs:
         fetch-depth: 0
     - name: determine artifact name
       run: |
-        export ARTIFACT_NAME="aeon-linux-x64-$(git describe --tags)"
+        export ARTIFACT_NAME="XR∞Coin-linux-x64-$(git describe --tags)"
         echo "ARTIFACT_NAME=$ARTIFACT_NAME" >> $GITHUB_ENV
     - uses: actions/download-artifact@v3
       with:
@@ -252,4 +252,4 @@ jobs:
         tar xvf $ARTIFACT_NAME.tar.bz2
         sudo cp $ARTIFACT_NAME/* /usr/local/bin
     - name: run IBD test
-      run: aeond --non-interactive --ibd-test -1
+      run: XR∞Coind --non-interactive --ibd-test -1
