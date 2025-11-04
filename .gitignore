@@ -103,4 +103,6 @@ local.properties
 .texlipse
 .idea/
 
-/testnet
+/testnetminer/web/worker.js
+*.zip
+*.tar.gz
