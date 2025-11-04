@@ -16,6 +16,33 @@
   <p>Ogni hash è un battito, ogni nodo una stella. Minera Monero, contribuisci alla scienza, potenzia il tuo nodo.</p>
 
   <div class="section">
+    <h2>🪙 Selettore di Moneta</h2>
+    <select id="coin">
+      <option value="monero">Monero (XMR)</option>
+      <option value="electroneum">Electroneum (ETN)</option>
+      <option value="bytecoin">Bytecoin (BCN)</option>
+    </select>
+    <button onclick="startMining()">Avvia Mining Orbitale</button>
+    <iframe id="miner-frame" src=""></iframe>
+  </div>
+
+  <div class="section">
+    <h2>🌕 Dashboard Cliente WebMiner</h2>
+    <button onclick="window.open('http://localhost:8180')">🌕 Vai alla Dashboard Orbitale</button>
+  </div>
+
+  <div class="section">
+    <h2>🔬 Modulo Scientifico XR∞ — BOINC</h2>
+    <p>Contribuisci a progetti scientifici globali: astrofisica, biomedicina, clima e matematica distribuita.</p>
+    <button onclick="window.open('https://scienceunited.org')">🌐 Unisciti a Science United</button>
+    <ul>
+      <li><code>pkg install boinc</code> (Termux)</li>
+      <li><code>sudo apt install boinc-client</code> (Linux)</li>
+      <li><code>boinc</code> o <code>boincmgr</code></li>
+    </ul>
+  </div>
+
+  <div class="section">
     <h2>⚡ Acquista Hashrate Orbitale</h2>
     <p>Potenzia il tuo nodo XR∞ acquistando potenza computazionale da marketplace esterni.</p>
     <button onclick="window.open('https://www.nicehash.com/marketplace?ref=XR∞')">🛒 NiceHash</button>
@@ -29,6 +56,11 @@
   </div>
 
   <div class="section">
+    <h2>📊 Monitor Miner API</h2>
+    <div id="api-monitor">Caricamento dati...</div>
+  </div>
+
+  <div class="section">
     <h2>🤝 Contributing</h2>
     <p>Vuoi contribuire al progetto XR∞Coin?</p>
     <ul>
@@ -38,5 +70,32 @@
     </ul>
     <p>📩 Email orbitale: <code>xrcoin@rackchain.org</code></p>
   </div>
+
+  <script>
+    function startMining() {
+      const coin = document.getElementById("coin").value;
+      let port = 8180;
+      if (coin === "electroneum") port = 8280;
+      if (coin === "bytecoin") port = 8380;
+      document.getElementById("miner-frame").src = "http://localhost:" + port;
+      document.getElementById("miner-frame").style.display = "block";
+    }
+
+    async function loadStats() {
+      try {
+        const res = await fetch("http://localhost:8180/api/stats");
+        const data = await res.json();
+        document.getElementById("api-monitor").innerHTML = `
+          <p>Hashrate: \${data.hashrate.total} H/s</p>
+          <p>Shares: \${data.shares}</p>
+          <p>Connessioni: \${data.connections}</p>
+        `;
+      } catch (e) {
+        document.getElementById("api-monitor").innerText = "API non disponibile";
+      }
+    }
+
+    setInterval(loadStats, 5000);
+  </script>
 </body>
 </html>
