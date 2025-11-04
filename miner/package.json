@@ -1,0 +1,15 @@
+{
+  "name": "cryptonoter",
+  "version": "1.0.0",
+  "description": "cryptonoter",
+  "repository": "https://cryptonoter.com",
+  "main": "server.js",
+  "dependencies": {
+    "ws": "^8.18.3"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "cryptonoter",
+  "license": "MIT"
+}
